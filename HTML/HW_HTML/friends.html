@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <style>
+        table,
+        td {
+            border: 1px solid orangered;
+            border-collapse: collapse;
+            color: white;
+            padding: 15px;
+        }
+
+        th {
+            border: 1px solid orangered;
+            border-collapse: collapse;
+            background-color: rgb(255, 215, 142);
+            color: black;
+            padding: 15px;
+        }
+
+        tr:hover {
+            background-color: #5e5454;
+        }
+
+        td.td1 {
+            text-align: center;
+        }
+
+        a:link,
+        a:visited {
+            width: 120px;
+            background-color: orange;
+            color: black;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family: courier;
+        }
+
+        a:hover,
+        a:active {
+            background-color: orangered;
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <h1 style="text-align: center; color: orange; font-family:courier;">Friends</h1>
+
+    <table style="font-family: courier; width: 100%;">
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>NickName</th>
+            <th>Site</th>
+        </tr>
+        <tr>
+            <td class=td1>1</td>
+            <td>Kanisha</td>
+            <td>R. Liljeholm</td>
+            <td class=td1>Eiw</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>2</td>
+            <td>surasak</td>
+            <td>somboon</td>
+            <td class=td1>ato</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>3</td>
+            <td>Nicha</td>
+            <td>Ngamtweerat</td>
+            <td class=td1>Fern</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>4</td>
+            <td>Nantika</td>
+            <td>Chaiwirattana</td>
+            <td class=td1>Nook</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>5</td>
+            <td>Thanapath</td>
+            <td>Yamubon</td>
+            <td class=td1>Champ</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>6</td>
+            <td>Nattawoot</td>
+            <td>Denduangchai</td>
+            <td class=td1>Tae</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>7</td>
+            <td>Suriya</td>
+            <td>Thaweechat</td>
+            <td class=td1>M</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>8</td>
+            <td>Nonthasut</td>
+            <td>Phanphon</td>
+            <td class=td1>Pack</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>9</td>
+            <td>Pattarachai</td>
+            <td>Roongsritong</td>
+            <td class=td1>Stamp</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>10</td>
+            <td>Saracha</td>
+            <td>Tongkumpunt</td>
+            <td class=td1>First</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>11</td>
+            <td>Chayawatthanin</td>
+            <td>Thirathananithichaiyaphak</td>
+            <td class=td1>Ake</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>12</td>
+            <td>Makawan</td>
+            <td>Maneephong</td>
+            <td class=td1>MIX</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>13</td>
+            <td>Supanat</td>
+            <td>Thanarungrueangkij</td>
+            <td class=td1>Supanat</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>14</td>
+            <td>Thanathip</td>
+            <td>Singkaew</td>
+            <td class=td1>Tak</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>15</td>
+            <td>Burapon</td>
+            <td>Ngamkhum</td>
+            <td class=td1>Bu</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>16</td>
+            <td>Naruth</td>
+            <td>Sithasom</td>
+            <td class=td1>Dean</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>17</td>
+            <td>Suntiradh</td>
+            <td>Kesbungkan</td>
+            <td class=td1>Dean</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>18</td>
+            <td>Kompruch</td>
+            <td>Benjaputharak</td>
+            <td class=td1>Ice</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>19</td>
+            <td>Wannapa </td>
+            <td>Sornchan</td>
+            <td class=td1>May</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>20</td>
+            <td>Nawinluck</td>
+            <td>Parsarai</td>
+            <td class=td1>win</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>21</td>
+            <td>Nittha</td>
+            <td>Koohatammakun</td>
+            <td class=td1>Namfon</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>22</td>
+            <td>Pakin</td>
+            <td>Phupong</td>
+            <td class=td1>Ake</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>23</td>
+            <td>Prachya</td>
+            <td>Piyaphonnarinthon</td>
+            <td class=td1>Boom</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>24</td>
+            <td>Suttichai</td>
+            <td>Intarumpun</td>
+            <td class=td1>Aum</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>25</td>
+            <td>Sompop</td>
+            <td>Laya</td>
+            <td class=td1>Tum</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>26</td>
+            <td>Apichit</td>
+            <td>Ungsitapkdee</td>
+            <td class=td1>Po</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>27</td>
+            <td>Natthapong</td>
+            <td>Vanichkajorn</td>
+            <td class=td1>Aong</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>28</td>
+            <td>Sitanan</td>
+            <td>Mitsuphap</td>
+            <td class=td1>Fah</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>29</td>
+            <td>Pattarathon</td>
+            <td>Nopwattanapong</td>
+            <td class=td1>Khaokong</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>30</td>
+            <td>Rungrawee</td>
+            <td>Musignawabut</td>
+            <td class=td1>Pair</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>31</td>
+            <td>Kaeoweena</td>
+            <td>Panjan</td>
+            <td class=td1>GAM</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>32</td>
+            <td>passakorn</td>
+            <td>chantarapakorn</td>
+            <td class=td1>champ</td>
+            <td></td>
+        </tr>
+        <tr style="background-color: peru;">
+            <td class=td1>33</td>
+            <td>Nanthaya</td>
+            <td>Sartpong</td>
+            <td class=td1>Aum</td>
+            <td style="width: 600px;">https://aumans.github.io/</td>
+        </tr>
+        <tr>
+            <td class=td1>34</td>
+            <td>Teerapong</td>
+            <td>Mookda</td>
+            <td class=td1>Jo</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>35</td>
+            <td>Pongsatorn</td>
+            <td>Pheungnoi</td>
+            <td class=td1>Tack</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>36</td>
+            <td>Mutcharin</td>
+            <td>Saekang</td>
+            <td class=td1>Moo</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>37</td>
+            <td>Pitch</td>
+            <td>Piyapramote</td>
+            <td class=td1>Not</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>38</td>
+            <td>Chatwaroon</td>
+            <td>Boonprakob</td>
+            <td class=td1>Mint</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>39</td>
+            <td>Narusorn</td>
+            <td>Veerachartwattana</td>
+            <td class=td1>Peach</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>40</td>
+            <td>Wasin</td>
+            <td>Nopsuwan</td>
+            <td class=td1>Now</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>41</td>
+            <td>Yanisara</td>
+            <td>Amonwanijhsan</td>
+            <td class=td1>Kaew</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>42</td>
+            <td>Seksak</td>
+            <td>Marakrong</td>
+            <td class=td1>Nui</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>43</td>
+            <td>Narongkorn</td>
+            <td>Atchariyayat</td>
+            <td class=td1>Plug</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>44</td>
+            <td>Phatara</td>
+            <td>Chutinathorakul</td>
+            <td class=td1>Ter</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>45</td>
+            <td>Aethaya</td>
+            <td>Meesawat</td>
+            <td class=td1>Chompoo</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>46</td>
+            <td>Chakkarin</td>
+            <td>Yinghan</td>
+            <td class=td1>Nut</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>47</td>
+            <td>Jintawat</td>
+            <td>Chumnumpornchai</td>
+            <td class=td1>B</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>48</td>
+            <td>Chanpakorn</td>
+            <td>Choosub</td>
+            <td class=td1>Fluke</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>49</td>
+            <td>Apat</td>
+            <td>Palawan</td>
+            <td class=td1>Nan</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>50</td>
+            <td>Don</td>
+            <td>Klanakin</td>
+            <td class=td1>DK</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>51</td>
+            <td>Sutara</td>
+            <td>Sirisukkhasin</td>
+            <td class=td1>Lookpair</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>52</td>
+            <td>Kamonluck</td>
+            <td>Chobdee</td>
+            <td class=td1>Gofe</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>53</td>
+            <td>Chatchon</td>
+            <td>Suwanchote</td>
+            <td class=td1>Nick</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>54</td>
+            <td>Akkarawat</td>
+            <td>Mansap</td>
+            <td class=td1>Coach</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>55</td>
+            <td>bukhori</td>
+            <td>malee</td>
+            <td class=td1>Ri</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>56</td>
+            <td>Sutthipong</td>
+            <td>Minsakorn</td>
+            <td class=td1>Bar</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>57</td>
+            <td>Kotchamon</td>
+            <td>Limgajangwong</td>
+            <td class=td1>Roe</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>58</td>
+            <td>Panupong</td>
+            <td>Keawpong</td>
+            <td class=td1>Joke</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>59</td>
+            <td>Nara</td>
+            <td>Muennara</td>
+            <td class=td1>POM</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>60</td>
+            <td>Supanat</td>
+            <td>Auengsirirat</td>
+            <td class=td1>Joong</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>61</td>
+            <td>Ponlawat</td>
+            <td>Suparat</td>
+            <td class=td1>Ko</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>62</td>
+            <td>Nattapat</td>
+            <td>Pattarapormjaroen</td>
+            <td class=td1>Nob</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>63</td>
+            <td>Panithi</td>
+            <td>Changranggan</td>
+            <td class=td1>Korid</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>64</td>
+            <td>Boonthicha</td>
+            <td>Sae-jia</td>
+            <td class=td1>Mui</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>65</td>
+            <td>Rattapol</td>
+            <td>Boonphui</td>
+            <td class=td1>Golf</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>66</td>
+            <td>Jatupong</td>
+            <td>Yospimpar</td>
+            <td class=td1>New</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>67</td>
+            <td>Thitipong</td>
+            <td>Hongkaroon</td>
+            <td class=td1>Boy</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>68</td>
+            <td>Kongphop</td>
+            <td>Lalun</td>
+            <td class=td1>Pokdeng</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>70</td>
+            <td>Sorawit</td>
+            <td>Phattharakundilok</td>
+            <td class=td1>Boom</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>69</td>
+            <td>chitpon</td>
+            <td>ponkram</td>
+            <td class=td1>Gho</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>71</td>
+            <td>Nutchanok</td>
+            <td>Puttakun</td>
+            <td class=td1>Nat</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>72</td>
+            <td>THATAPON</td>
+            <td>SAMTALEE</td>
+            <td class=td1>DEEN</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>73</td>
+            <td>Rattanachai </td>
+            <td>Rachparcon</td>
+            <td class=td1>MaxNum</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class=td1>74</td>
+            <td>Kittiporn</td>
+            <td>Julchoo</td>
+            <td class=td1>Foam</td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <div style="text-align: center">
+        <a href="index.html">Back to Home</a>
+        <a href="profile.html">Profile</a>
+    </div>
+
+</body>
+
+</html>
