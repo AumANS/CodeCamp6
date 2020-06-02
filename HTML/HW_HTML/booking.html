@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <style>
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            opacity: 1;
+        }
+
+        input[type=submit] {
+            background-color: rgb(255, 123, 0);
+            color: white;
+            padding: 5px 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center">HTML LAB Booking</h1>
+    <h3 style="text-align: right">นันทยา ศาสตร์พงษ์ CodeCamp6</h3>
+    <h3 style="text-align: right">Email: aum.nanthaya@gmail.com</h3>
+    <form>
+        <fieldset style="width: 400px;">
+            <legend><b>Book Flight</b></legend>
+            <table>
+                <tr>
+                    <td colspan="2"><label for="flyingfrom">Flying From</label></td>
+                    <td colspan="2"><label for="flyingto">To</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><select id="flyingfrom" name="flyingfrom">
+                            <option value="DMK">DMK: Don Mueang Airport</option>
+                            <option value="BKK">BKK: Suvarnabhumi Airport</option>
+                        </select>
+                    </td>
+                    <td colspan="2"> <select id="flyingto" name="flyingto">
+                            <option value="Blank"></option>
+                            <option value="CNX">CNX: Chiang Mai Airport</option>
+                            <option value="CEI">CEI: Chiang Rai Airport</option>
+                            <option value="HKT">HKT: Phuket Airport</option>
+                            <option value="HDY">HDY: Hat Yai Airport</option>
+                            <option value="KBV">KBV: Krabi Airport</option>
+                            <option value="KKC">KKC: Khon Kaen Airport</option>
+                            <option value="CJM">CJM: Chumphon Airport</option>
+                            <option value="NNT">NNT: Nan Airport</option>
+                            <option value="HGN">HGN: Mae Hong Son Airport</option>
+                            <option value="LOE">LOE: Loei Airport</option>
+                            <option value="USM">USM: Samui Airport</option>
+                            <option value="UTH">UTH: Udon Thani Airport</option>
+                            <option value="UBP">UBP: Ubon Ratchathani Airport</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr style="height: 10px;">
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="departing">Departing</label></td>
+                    <td colspan="2"><label for="returning">Returning</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="date" id="departing" name="departing"></td>
+                    <td colspan="2"><input type="date" id="returning" name="returning"></td>
+                </tr>
+                <tr style="height: 10px;">
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <td><label for="adult">Adult</label></td>
+                    <td><label for="child">Child</label></td>
+                    <td><label for="infant">Infant</label></td>
+                    <td style="color: red;"><label for="currency">Currency</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="adult" name="adult" min="1" max="12" value="1"></td>
+                    <td><input type="number" id="child" name="child" min="0" max="12" value="0"></td>
+                    <td><input type="number" id="infant" name="infant" min="0" max="12" value="0"></td>
+                    <td><select id="currency" name="currency">
+                            <option value="THB">THB</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="JPY">JPY</option>
+                            <option value="CNY">CNY</option>
+                        </select></td>
+                </tr>
+            </table>
+            <br><br>
+            <input type="submit" value="SEARCH">
+        </fieldset>
+    </form>
+    <script>
+        let today = new Date().toISOString().substr(0, 10);
+        document.querySelector("#departing").value = today;
+    </script>
+</body>
+
+</html>
