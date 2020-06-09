@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW CSS Review</title>
+    <style>
+        table {
+            width: 100%
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            border-collapse: collapse;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .orange {
+            text-align: center;
+            background-color: rgb(255, 115, 0);
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .tableform {
+            padding: 10px;
+            border: 5px outset gray;
+            width: 50%;
+            background-color: rgb(199, 198, 198);
+        }
+
+        .tform {
+            padding-bottom: 5px;
+            padding-top: 5px;
+            border-bottom: none;
+            font-family: monospace;
+            font-size: 12px;
+            width: 25%;
+        }
+
+        .midform {
+            padding-bottom: 5px;
+            padding-top: 5px;
+            padding-right: 7px;
+            border-bottom: none;
+            font-family: monospace;
+            font-size: 12px;
+            width: 30%;
+        }
+
+        .bform {
+            padding-bottom: 5px;
+            padding-top: 5px;
+            border-bottom: none;
+            font-family: monospace;
+            font-size: 12px;
+            width: 45%;
+        }
+
+        .bformsetup {
+            padding-bottom: 7px;
+            padding-top: 7px;
+            text-align: left;
+            border-top: 2px solid grey;
+            background-color: rgb(214, 214, 214);
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+        .required {
+            color: red;
+        }
+
+        select,
+        input[type="text"],
+        input[type="search"],
+        input[type="number"] {
+            width: 100%;
+            box-sizing: border-box;
+            height: 20px;
+        }
+
+        #scoringtype {
+            width: 50%;
+            box-sizing: border-box;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="center">HW CSS Review</h1>
+    <h3 class="right">นันทยา ศาสตร์พงษ์ CodeCamp6</h3>
+    <h3 class="right">Email: aum.nanthaya@gmail.com</h3>
+
+    <table>
+        <tr class="orange">
+            <th>No.</th>
+            <th>Topic</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td class="center">1</td>
+            <td>CSS syntax ประกอบด้วย</td>
+            <td>
+                <ul>
+                    <li>Selector</li>
+                    <li>Property</li>
+                    <li>Value</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="center">2</td>
+            <td>การเขียน CSS มี 3 แบบ</td>
+            <td>
+                <ol>
+                    <li>Inline CSS</li>
+                    <li>Internal CSS</li>
+                    <li>External CSS</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td class="center">3</td>
+            <td>Selector มี 3 แบบ</td>
+            <td>
+                <ol>
+                    <li>Class Selector</li>
+                    <li>ID Selector</li>
+                    <li>TAG Selector</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td class="center">4</td>
+            <td>Combinator มี 4 แบบ</td>
+            <td>
+                <ol>
+                    <li>descendant selector (space)</li>
+                    <li>child selector (>)</li>
+                    <li>adjacent sibling selector (+)</li>
+                    <li>general sibling selector (~)</li>
+                </ol>
+            </td>
+        </tr>
+    </table><br>
+
+    <table>
+        <tr class="orange">
+            <th>No.</th>
+            <th>Topic</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td class="center">1</td>
+            <td>ความแตกต่างของ Property และ Value</td>
+            <td>
+                <ul>
+                    <li>Property สำหรับกำหนดส่วนของคุณสมบัติที่ต้องการให้แสดง</li>
+                    <li>Value สำหรับกำหนดค่าที่ต้องการให้แสดง</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="center">2</td>
+            <td>Property มี 5 กลุ่ม</td>
+            <td>
+                <ol>
+                    <li>Property for content: Color, Size, Font, Text, List-Style-Type, Height, Width, Background
+                    </li>
+                    <li>Property for border: Border, Table</li>
+                    <li>Property for padding: Padding (top, right, buttom, left)</li>
+                    <li>Property for margin: Margin (top, right, buttom, left)</li>
+                    <li>Property for element: Display, Height, Width, Position, Float, Align, Flex, Grid</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td class="center">3</td>
+            <td>Value Unit มี 2 ประเภท</td>
+            <td>
+                <ol>
+                    <li>Absolute lenghts</li>
+                    <ul>
+                        <li>cm เซนติเมตร</li>
+                        <li>mm มิลลิเมตร</li>
+                        <li>in นิ้ว</li>
+                        <li>px พิกเซล 1/96 นิ้ว</li>
+                        <li>pt พอยท์ 1/72 นิ้ว</li>
+                        <li>pc พิคาล 1/12 นิ้ว</li>
+                    </ul>
+                    <li>Relative lenghts</li>
+                    <ul>
+                        <li>em เท่าขนาดฟอนต์ของ element</li>
+                        <li>ex เท่าความสูงของฟอนต์ของ element</li>
+                        <li>ch ความกว้างของตัวหนังสือใน parent element</li>
+                        <li>rem เท่าขนาดฟอนต์ของ root element</li>
+                        <li>vh เปอร์เซ็นต์ความสูงหน้าจอ</li>
+                        <li>vw เปอร์เซ็นต์ความกว้างหน้าจอ</li>
+                        <li>vmin เปอร์เซ็นต์ของ view point ต่ำสุด</li>
+                        <li>vmax เปอร์เซ็นต์ของ view point สูงสุด</li>
+                        <li>% เปอร์เซ็นต์ของ parent element</li>
+                    </ul>
+                </ol>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <form class="tableform">
+        <table style="width: 100%; background-color: white; border: 20px solid white;">
+            <tr class="tform">
+                <td class="tform"><label for="name">Name <span class="required"><sup>*</sup></span>:</label></td>
+                <td class="midform"><input type="search" id="name" name="name" required></td>
+                <td class="bform"><input type="submit" value="?"></td>
+            </tr>
+            <tr class="tform">
+                <td class="tform"><label for="tabtext">Tab Text <span class="required"><sup>*</sup></span>:</label></td>
+                <td class="midform"> <input type="text" id="tabtext" name="tabtext" required></td>
+                <td class="bform"> <input type="submit" value="?"></td>
+            </tr>
+            <tr class="tform">
+                <td class="tform"><label for="url">URL <span class="required"><sup>*</sup></span>:</label></td>
+                <td colspan="2" class="bform">
+                    <label for="url">http://www.wizehive.com/webform/</label>
+                    <input type="url" id="homepage" name="homepage" required>
+                </td>
+            </tr>
+            <tr class="tform">
+                <td colspan="3" class="tform"></td>
+            </tr>
+            <tr>
+                <th colspan="3" class="bformsetup">FORM SETUP</th>
+            </tr>
+            <tr class="tform">
+                <td class="tform"><label for="form">Form:</label></td>
+                <td class="midform">
+                    <select id="form" name="form">
+                        <option value="form"></option>
+                    </select>
+                </td>
+                <td class="bform"> <input type="submit" value="Edit"></td>
+            </tr>
+            <tr class="tform">
+                <td class="tform"><label for="logo">Logo:</label></td>
+                <td class="midform"><label for="nologo">no logo uploaded</label></td>
+                <td class="bform"> <input type="submit" value="Upload Logo"></td>
+            </tr>
+            <tr class="tform">
+                <td class="tform"><label for="templatetext">Template Text:</label></td>
+                <td class="midform">
+                    <select id="templatetext" name="templatetext">
+                        <option value="form">English</option>
+                    </select>
+                </td>
+                <td class="bform"> <input type="submit" value="Edit"></td>
+            </tr>
+            <tr class="tform">
+                <td class="tform"><label for="reviewform">Review Form:</label></td>
+                <td class="midform">
+                    <select id="reviewform" name="reviewform">
+                        <option value="form">Default</option>
+                    </select>
+                </td>
+                <td class="bform"></td>
+            </tr>
+            <tr class="tform">
+                <td class="tform"><label for="reviewscore">Review Score:</label></td>
+                <td class="midform">
+                    <select id="reviewscore" name="reviewscore">
+                        <option value="form">Rating</option>
+                    </select>
+                </td>
+                <td class="bform"> <input type="submit" value="Reload Fields"></td>
+            </tr>
+            <tr class="tform">
+                <td class="tform"><label for="scoringtype">Scoring Type:</label></td>
+                <td class="midform">
+                    <select id="scoringtype" name="scoringtype">
+                        <option value="form">Average</option>
+                    </select>
+                </td>
+                <td class="bform"></td>
+            </tr>
+            <tr class="tform">
+                <td class="tform"><label for="maxscore">Max Score:</label></td>
+                <td class="midform">
+                    <input type="number" id="maxscore" name="maxscore" min="0" step="0.01" value="4.00">
+                </td>
+                <td class="bform"></td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <hr>
+
+    <table>
+        <tr class="orange">
+            <th>No.</th>
+            <th>Topic</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td class="center">1</td>
+            <td>Value ใน Display Property</td>
+            <td>
+                <ul>
+                    <li>display: none</li>
+                    <li>display: inline</li>
+                    <li>display: block</li>
+                    <li>display: inline-block</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="center">2</td>
+            <td>ความแตกต่างของ Grid และ Flex</td>
+            <td>
+                <ul>
+                    <li>Flex ใช้เพื่อจัดการ layout 1D ส่วน Grid ใช้เพื่อจัดการ layout 2D</li>
+                    <ul>
+                        <li>Flex จะสามารถจัดวางของต่างๆภายใน layout 1 แถว อาจจะเป็นแนวตั้งหรือแนวนอน</li>
+                        <li>Grid จะสามารถจัดของไว้ตรงไหนก็ได้ใน grid layout</li>
+                    </ul>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="center">3</td>
+            <td>ความแตกต่างของ Justify and Align</td>
+            <td>
+                <ul>
+                    <li>Justify จะใช้กับ flex และ grid โดยจะจัดการในแนวนอน ส่วน Align จะใช้กับ flex โดยจะจัดการในแนวตั้ง
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="center">4</td>
+            <td>Position</td>
+            <td>
+                <ul>
+                    <li>การจัดตำแหน่ง ประกอบด้วย</li>
+                    <ul>
+                        <li>Static : เป็นค่าพื้นฐานของทุกบล็อกโดนจะเลื่อนตามหน้าเว็บปกติ</li>
+                        <li>Relative : การเลื่อนออกจากตำแหน่งเดิม ตามที่เรากำหนดการดัน block จากทาง ซ้าย ขวา บน ล่าง
+                        </li>
+                        <li>Fixed : กำหนดให้ block นั้นยึดอยู่กับที่บนหน้าเว็บ</li>
+                        <li>Alsolute : การเลื่อนออกจากมุมซ้ายบนสุดของหน้าจะ ตามการกำหนดการดัน block จากทาง ซ็าย ขวา บน
+                            ล่าง</li>
+                        <li>Sticky : การรวม relative กับ fixed ไว้ด้วยกัน โดยการกำหนด relative เพิ่มว่าจะให้ไป fix ที่
+                            top หรือ bottom ทำให้เราเห็น block นั้นเลื่อนและถูกตรีงไว้เมื่อเรา เลื่อน scroll เมาส์</li>
+                    </ul>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="center">5</td>
+            <td>Z-index</td>
+            <td>
+                <ul>
+                    <li>เป็นการจัดการ element ในรูปแบบชั้น layer บนหน้าจอ โดยค่าน้อยจะอยู่ด้านหลัง
+                        ส่วนค่ามากจะอยู่ด้านหน้า ค่าเริ่มต้นของทุก element คือ z-index = 0</li>
+                </ul>
+            </td>
+        </tr>
+    </table><br>
+
+</html>
