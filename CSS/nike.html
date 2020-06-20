@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        /* header */
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+            border-bottom: 1px solid gainsboro;
+            text-align: center;
+        }
+
+        .topnav a {
+            float: none;
+            display: inline-block;
+            color: black;
+            padding: 20px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .topnav a:hover {
+            border-bottom: 2px solid black;
+        }
+
+        .topnav a.active {
+            border-bottom: 2px solid black;
+        }
+
+        img {
+            float: left;
+            width: 50px;
+            height: 50px;
+            padding: 7px 7px;
+        }
+
+        .topnav .search-container {
+            float: right;
+            border: 1px solid gainsboro;
+            padding: 5px 5px;
+            margin: 17px;
+        }
+
+        .topnav input[type=text] {
+            font-size: 16px;
+            background: white;
+            border: none;
+        }
+
+        .topnav .search-container button {
+            float: left;
+            font-size: 16px;
+            cursor: pointer;
+            background: white;
+            border: none;
+        }
+
+        /* body */
+        .new {
+            float: none;
+            display: flex;
+            background-color: whitesmoke;
+            border-bottom: 1px solid gainsboro;
+            text-align: center;
+            color: black;
+            font-size: 12px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .new a {
+            text-align: center;
+            color: black;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: white;
+            text-align: center;
+        }
+
+        #navbar a {
+            float: none;
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 30px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #navbar a:hover {
+            color: gainsboro;
+        }
+
+        #navbar a.active {
+            color: gainsboro;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        p {
+            float: none;
+            display: flex;
+            background-color: white;
+            text-align: left;
+            color: black;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 40px;
+            background-color: white;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .grid-container>div {
+            background-color: black;
+            border: 1px solid grey;
+            text-align: center;
+            font-size: 30px;
+            width: 400px;
+            height: 400px;
+            color: white;
+
+        }
+
+        .grid-container a {
+            color: white;
+            text-align: center;
+            padding: 30px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .grid-container a:hover {
+            color: gainsboro;
+        }
+
+        .grid-container a.active {
+            color: gainsboro;
+        }
+
+        /* footer */
+
+        .grid-footer:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .grid-footer a {
+            color: white;
+            background-color: black;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .grid-footer a:hover {
+            color: gainsboro;
+        }
+
+        .grid-footer a.active {
+            color: gainsboro;
+        }
+
+        .column {
+            float: left;
+            width: 20%;
+            height: 300px;
+            background-color: black;
+        }
+
+        .column2 {
+            float: right;
+            width: 40%;
+            height: 300px;
+            background-color: black;
+        }
+
+        div.image {
+            margin: 5px;
+            float: right;
+            padding: 3px;
+
+        }
+
+        div.image:hover {
+            background-color: black;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+            background-color: black;
+            color: coral;
+        }
+    </style>s
+
+</head>
+
+<body>
+    <h1 class="center">HW CSS Challenge</h1>
+    <h3 class="right">นันทยา ศาสตร์พงษ์ CodeCamp6</h3>
+    <h3 class="right">Email: aum.nanthaya@gmail.com</h3>
+    <header>
+
+        <div class="topnav">
+            <img src="logo.png" alt="logo">
+
+            <a href="#men">บุรุษ</a>
+            <a href="#women">สตรี</a>
+            <a href="#child">เด็ก</a>
+            <a href="#design">ออกแบบด้วยตนเอง</a>
+            <a href="#calendar">ปฏิทินเปิดตัว</a>
+            <a href="#discount">ลดราคา</a>
+
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="ค้นหา" name="search">
+                </form>
+            </div>
+        </div>
+
+        <div class="new">
+            <span>COVID-19: ข้อมูลเกี่ยวกับร้านและการจัดส่ง สามารถดูได้<a href="#new">ที่นี่</a></span>
+        </div>
+
+    </header>
+
+    <content>
+
+        <div id="navbar">
+
+            <a href="#shoes">รองเท้า</a>
+            <a href="#shirt">เสื้อผ้า</a>
+            <a href="#equipment">อุปกรณ์</a>
+
+        </div>
+        <p>category</p>
+        <div class="grid-container">
+
+            <div><a href="#1">1</a></div>
+            <div><a href="#2">2</a></div>
+            <div><a href="#3">3</a></div>
+            <div><a href="#4">4</a></div>
+            <div><a href="#5">5</a></div>
+            <div><a href="#6">6</a></div>
+            <div><a href="#7">7</a></div>
+            <div><a href="#8">8</a></div>
+            <div><a href="#9">9</a></div>
+
+        </div>
+
+    </content>
+
+    <footer>
+        <div class="grid-footer">
+
+            <div class="column"><a href="#fsearch">ค้นหา</a></div>
+            <div class="column"><a href="#fhelp">ช่วยเหลือ</a></div>
+            <div class="column"><a href="#fabout">เกี่ยวกับ</a></div>
+
+            <div class="column2">
+                <div class="image">
+                    <a href="https://www.gmail.com/">
+                        <img src="btn.png" alt="btn" width="25" height="25">
+                    </a>
+                    <div class="desc">Gmail</div>
+                </div>
+
+                <div class="image">
+                    <a href="https://www.facebook.com/">
+                        <img src="btn.png" alt="btn" width="25" height="25">
+                    </a>
+                    <div class="desc">Facebook</div>
+                </div>
+
+                <div class="image">
+                    <a href="https://www.instagram.com/">
+                        <img src="btn.png" alt="btn" width="25" height="25">
+                    </a>
+                    <div class="desc">Instagram</div>
+                </div>
+
+                <div class="image">
+                    <a href="https://www.youtube.com/">
+                        <img src="btn.png" alt="btn" width="25" height="25">
+                    </a>
+                    <div class="desc">YouTube</div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
