@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW CSS Media Query</title>
+
+    <style>
+        * {
+            font-family: monospace;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            width: 80%;
+            height: auto;
+        }
+
+        @media only screen and (max-width: 1440px) {
+            .child {
+                width: 32%;
+                font-size: 24px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .child {
+                width: 48%;
+                font-size: 18px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .child {
+                width: 95%;
+                font-size: 10px;
+            }
+        }
+
+        .flex-container {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+        }
+
+        .child {
+            width: 350px;
+            height: 500px;
+            background-color: black;
+            box-sizing: border-box;
+            color: whitesmoke;
+            text-align: center;
+            padding: 5px;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="center">HW CSS Media Query</h1>
+    <h3 class="right">นันทยา ศาสตร์พงษ์ CodeCamp6</h3>
+    <h3 class="right">Email: aum.nanthaya@gmail.com</h3>
+
+    <div class="image">
+        <img src="/HTML/HW_HTML/Sakura.jpg" alt="sakura">
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+
+        <div class="child">
+            <h3>Column1</h3>
+            <p>ipsum dolor sit amet consectetur adipisicing elit. Sed enim atque officiis aliquid quos, dolor
+                mollitia saepe molestias quidem</p>
+        </div>
+
+        <div class="child">
+            <h3>Column2</h3>
+            <p>ipsum dolor, sit amet consectetur adipisicing elit. Ipsam vitae earum accusamus magnam repellendus
+                culpa maxime voluptates. Beatae nobis maiores quisquam, ipsa officiis</p>
+        </div>
+
+        <div class="child">
+            <h3>Column3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur aliquam deleniti in ducimus,
+                maiores, distinctio totam, culpa ratione sint explicabo. Alias expedita aperiam eius. Nobis non quasi
+                soluta dolore.</p>
+        </div>
+
+        <div class="child">
+            <h3>Column4</h3>
+            <p>ipsum, dolor sit amet consectetur adipisicing elit. Quod ad dolorem atque, totam odit</p>
+        </div>
+
+        <div class="child">
+            <h3>Column5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsam fugiat, dolor natus repellendus
+                cupiditate></p>
+        </div>
+
+        <div class="child">
+            <h3>Column6</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
+                adipisicing
+                elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
